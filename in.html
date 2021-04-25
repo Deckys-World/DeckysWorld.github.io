@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="RESPVIDEO.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src="https://clipboardjs.com/dist/clipboard.min.js"></script>
+</head>
+
+<body>
+
+
+
+  <style>
+    .kbds {
+      background-color: white;
+      color: #050505;
+    }
+
+    .texr {
+      resize: none;
+    }
+
+    .texo {
+      resize: none;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    .form-control {
+      font-size: 1.45rem;
+    }
+
+    .btn {
+      font-size: 1.45rem;
+    }
+
+    .navbar-brand {
+      font-size: 1.75rem;
+    }
+
+    .navbar {
+      font-size: 1.70rem;
+    }
+
+    .dropdown-item {
+      font-size: 1.45rem;
+    }
+
+    .alert {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: 280px) {
+      html {
+        text-align: center;
+      }
+
+      .media-body h6 font {
+        font-size: 1rem;
+      }
+    }
+
+    @media only screen and (max-width: 810px) {
+      html {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+
+      .media h6 li a {
+        font-size: .1rem;
+      }
+
+      .fonyt {
+        font-size: 1rem;
+      }
+
+      .texr {
+        font-size: .1rem;
+      }
+
+      .texo {
+        font-size: .1rem;
+        max-width: 95%;
+      }
+
+      .media-body h5 font {
+        font-size: 1rem;
+      }
+
+      .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: .25rem 1rem;
+        clear: both;
+        font-weight: 400;
+        color: #050505;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: normal;
+        background-color: #00000000;
+        border: 9;
+
+      }
+    }
+
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .media-body {
+      font-size: 1.4rem;
+    }
+
+    .media-body h6 {
+      font-size: 1.4rem;
+    }
+
+    .media1200 {
+      max-width: 72rem;
+    }
+
+    .media1 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media1 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+    .media2200 {
+      max-width: 72rem;
+
+    }
+
+    .media2 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media2 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .media3200 {
+      max-width: 72em;
+
+    }
+
+    .media3 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media3 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .media4200 {
+      max-width: 72rem;
+
+    }
+
+    .media4 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media4 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .media5200 {
+      max-width: 72rem;
+
+    }
+
+    .media5 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media5 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .media6200 {
+      max-width: 72rem;
+
+    }
+
+    .media6 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media6 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .media72 {
+      max-width: 72rem;
+
+    }
+
+    .media7 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media7 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .media8200 {
+      max-width: 72rem;
+
+    }
+
+    .media8 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media8 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .media9200 {
+      max-width: 72rem;
+
+    }
+
+    .media9 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media9 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mediaT200 {
+      max-width: 72rem;
+
+    }
+
+    .mediaT {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .mediaT iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mediaE200 {
+      max-width: 72rem;
+
+    }
+
+    .mediaE {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .mediaE iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mediaTW200 {
+      max-width: 72rem;
+
+    }
+
+    .mediaTW {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .mediaTW iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mediaTh200 {
+      max-width: 72rem;
+
+    }
+
+    .mediaTh {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .mediaTh iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .media14200 {
+      max-width: 72rem;
+
+    }
+
+    .media14 {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .media14 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mediaemoji200 {
+      max-width: 72rem;
+
+    }
+
+    .mediaemoji {
+      position: relative;
+      padding: 33%;
+      /* Equals 16:9 */
+      height: 0;
+
+    }
+
+    .mediaemoji iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Decky's World</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/in.html#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Videos
+            </a>
+
+            <ol class="dropdown-menu" aria-labelledby="navbarDropdown" id="myol">
+
+              <li><a class="dropdown-item" href="#How to make a PDF without any app">How to make a PDF without any
+                  app</a></li>
+              <li><a class="dropdown-item" href="#How to add a shutdown shortcut in computers">How to add a shutdown
+                  shortcut in computers</a></li>
+
+              <li><a class="dropdown-item" href="#How to use VLC media Player as Screen Recorder">How to use VLC media
+                  Player as Screen Recorder</a></li>
+
+              <li><a class="dropdown-item" href="#How to cast phone screen in computer">How to cast phone screen in
+                  computer
+                </a></li>
+
+              <li><a class="dropdown-item" href="#How to make gallery to PDF||DECKY's World">How to make gallery to
+                  PDF||DECKY's World
+
+              <li><a class="dropdown-item" href="#How to Learn French Verb easily || Decky's world">How to Learn
+                  French
+                  Verb easily || Decky's world
+
+              <li><a class="dropdown-item" href="#How to crop any video using VLC media player">How to crop any video
+                  using VLC media player
+
+              <li><a class="dropdown-item" href="#How to type in different font in any Android phone in WhatsApp">How
+                  to
+                  type in different font in any Android phone in WhatsApp
+
+              <li><a class="dropdown-item" href="#How to download any video using VLC Media Player.">How to download
+                  any
+                  video using VLC Media Player.
+
+
+              <li><a class="dropdown-item" href="#How to convert any text to speech using python">How to convert any
+                  text to speech using python
+
+              <li><a class="dropdown-item" href="#How to convert text to speech using Android|| Decky's World">How to
+                  convert text to speech using Android|| Decky's World
+
+              <li><a class="dropdown-item" href="#How to change caller screen in any phone.">How to change caller
+                  screen
+                  in any phone.
+
+              <li><a class="dropdown-item" href="#How to use (₹) rupee sign in any windows #PC">How to use (₹) rupee
+                  sign in any windows #PC
+
+              <li><a class="dropdown-item" href="#How to use Euros € sign in Windows.">How to use Euros € sign in
+                  Windows.
+                </a></li>
+
+              <li><a class="dropdown-item"
+                  href="#how to add Emoji 😎 in Html | Emoji in HTML webpage | icon in webpage.">how to add Emoji 😎 in
+                  Html | Emoji in HTML webpage | icon in webpage.
+                </a></li>
+
+
+            </ol>
+      </div>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <!-- <li><a class="dropdown-item" href="#"></a></li> -->
+      </ul>
+      </li>
+
+      </ul>
+
+
+
+    </div>
+    </div>
+  </nav>
+
+
+  <div class="alert alert-dark " role="alert">
+    Here are all the vedios of my channel
+  </div>
+
+  <div class="video-class">
+
+    <div class="media1200">
+      <div class="media1">
+        <iframe width="720" height="470" id="How to make a PDF without any app"
+          src="https://www.youtube.com/embed/d9BbeBhBPY4" title="How to make a PDF without any app" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      </div" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">How to make a PDF without any app</h5><br>
+        This video is about how can you make PDF using Website
+        <h6>Website link: <a href="https://www.ilovepdf.com">
+            <font color="blue">https://www.ilovepdf.com</font>
+          </a></h6>
+      </div>
+    </div>
+
+
+
+
+    <div class="media4200">
+      <div class="media4">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/9Zu914uLYGI"
+          title="How to add a shutdown shortcut in computers" id="How to add a shutdown shortcut in computers"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      </div" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">How to add a shutdown shortcut in computers</h5><br>
+        This video is about how can you make PDF using Website
+        <h6>What have to type:
+          <input class="texr" type="text" value="%windir%\system32\SlideToShutDown.exe" id="myInput" readonly size="40"
+            style="Background-color:Yellow ">
+          <button onclick="myFunction()"><img src="/img/copy-to-clipboard-icon-1.jpg" width="17rem"></button>
+        </h6>
+
+
+
+      </div>
+    </div>
+
+    <div class="media2200">
+      <div class="media2">
+
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/OTQICryfuKQ?rel=0"
+          title="How to use VLC media Player as Screen Recorder" id="How to use VLC media Player as Screen Recorder"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="media-body">
+        <h5 class="mt-0">How to use VLC media Player as Screen Recorder</h5> <br>
+        This video is about how can you record your screen using VLC Media Player.
+        <h6>
+          To use VLC Media Player as a Screen Recorder follow these steps :
+        </h6>
+        <ul>
+          <li>Open your VLC Media Player. <br><br>
+          <li>Go to Media tab at the top-left corner.<br><br>
+          <li>And then hit the 6<sup>th</sup> option "open capture device" or use shortcut key ctrl+c.<br><br>
+          <li>A "Open Media" dailog box opens.<br><br>
+          <li>which first option is of "Capture mode" in dropdown form defaultly switch to "DirectShow" device
+            type.<br><br>
+          <li>You have to click on that dropdown.After that click on third option "Desktop".<br><br>
+          <li>After that tou have to go to the third block which will have "Desired frame rate for the capture"
+            written
+            in
+            it.<br><br>
+          <li>You will see the text area near it, in which you have to enter the framerate which you want for your
+            recorded video.<br><br>
+          <li>At the last there will be a play dropdown button click on that dropdown button(Down-arrow button).<br><br>
+          <li>After that click on the last option "convert".<br><br>
+          <li>A new dailog box appears.<br><br>
+          <li>In new dailog box there will be a profile dropdown.<br><br>
+          <li>select the first option( select this option "<font color="REd">Video - H.264 + MP3(MP4)</font>") in that
+            dropdown.<br><br>
+
+
+        </ul>
+      </div>
+
+
+    </div>
+
+
+    <div class="media3200">
+      <div class="media3">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/4hVpI1icLFA?rel=0"
+          title="how to cast phone screen in computer" id="How to cast phone screen in computer" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="media-body">
+    <h5 class="mt-0">how to cast phone screen in computer</h5><br>
+    To know how to caste screen watch video till end.
+
+    <h6>
+
+      App link: <a href="https://play.google.com/store/apps/details?id=com.microapps.screenmirroring">
+        <font color="blue">
+          https://play.google.com/store/apps/details?id=com.screenmirroring
+        </font>
+      </a>
+    </h6>
+  </div>
+
+  <div class="media5200">
+    <div class="media5">
+      <iframe width="720" height="470" src="https://www.youtube.com/embed/Y_anpYpH7yk"
+        title="How to make gallery to PDF||DECKY's World" id="How to make gallery to PDF||DECKY's World" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    </div" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0">How to make gallery to PDF||DECKY's World</h5><br>
+      This video is about how can you make PDF from gallery images
+      <h6>App link: <a href="https://play.google.com/store/apps/details?id=com.adobe.scan.android">
+          <font color="blue">https://play.google.com/store/apps/details?id=com.adobe.scan</font>
+        </a></h6>
+    </div>
+
+    <div class="media6200">
+      <div class="media6">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/hn-uRlCjAMI"
+          title="How to Learn French Verb easily || Decky's world" id="How to Learn French Verb easily || Decky's world"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      </div" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">How to Learn French Verb easily || Decky's world</h5><br>
+        To learn French Verb you ann download app from the link given below.
+        <h6>App link: <a href="https://play.google.com/store/apps/details?id=com.leconjugueur.droid">
+            <font color="blue">https://play.google.com/.leconjugueur.droid</font>
+          </a></h6>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div class="media7200">
+      <div class="media7">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/D-QDxb11zDI"
+          title="How to crop any video using VLC media player" id="How to crop any video using VLC media player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-pictureHow to crop any video using VLC media player"
+          allowfullscreen></iframe>
+      </div>
+
+      </div" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">How to crop any video using VLC media player</h5><br>
+        This is How can you crop any video using VLC media player
+        if you don't have VLC Media player you can download if from thelink given below.
+        <h6><a href="https://www.videolan.org/vlc/download-windows.html">
+            <font color="REd">https://www.videolan.org/vlc/download-windows.html </font>
+          </a></h6>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div class="media8200">
+      <div class="media8">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/T2H_9c0feRQ"
+          title="How to type in different font in any Android phone in WhatsApp"
+          id="How to type in different font in any Android phone in WhatsApp" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      </div" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">How to type in different font in any Android phone in WhatsApp</h5><br>
+        only in some mobile you can type in different fonts in WhatsApp this video is about how can you type in
+        different fonts in android WhatsApp.
+        <h6>App link: <a href="https://play.google.com/store/apps/details?id=com.mint.keyboard">
+            <font color="blue">https://play.google.com/store/apps/details?id=com.mint.keyboard</font>
+          </a></h6>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div class="media9200">
+      <div class="media9">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/1i81YVB3XZc" title="How to download any video using VLC Media Player.
+        " id="How to download any video using VLC Media Player." frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      </div" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">How to download any video using VLC Media Player.
+        </h5><br>
+        This video is about How to download any video using VLC Media Player.
+        <h6><a href="https://www.videolan.org/vlc/download-windows.html">
+            <font color="blue">Click here to download VLC Media Player</font>
+          </a></h6>
+      </div>
+
+
+      <div class="mediaT200">
+        <div class="mediaT">
+          <iframe width="720" height="470" src="https://www.youtube.com/embed/cfBCoZH-XjE"
+            title="How to convert any text to speech using python" id="How to convert any text to speech using python"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        </div" class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">How to convert any text to speech using python
+          </h5><br>
+          There are many methods to convert text to speech in this video i told you that how can you convert text to
+          speech vsing python language.<br>
+
+          <h6>Code that you have to type:</h6><textarea class="texo" id="myinput" rows="8.9" cols="50" readonly
+            style="Background-color:rgb(253, 249, 1)">from gtts import gTTS  
+import os
+my_text="the quick brown fox jumps upon a lazy dog"
+language='en'
+output=gTTS(text=my_text, lang=language, slow=False)
+output.save("sample.mp3")
+os.system("start sample.mp3") </textarea>
+          <button onclick="myFunction2()"><img src="/img/copy-to-clipboard-icon-1.jpg" width="17rem"></button><br>
+
+          <font class="fonyt" color="red" ,font size=0.1>IF you dont have python or the editor which i am using you can
+            download it
+            from the given link</font>
+          <h6>Python Link: <a href="https://www.python.org/downloads/">
+              <font color="blue">https://www.python.org</font>
+            </a></h6><br>
+          <h6>VS code(editor) Link:<a href="https://code.visualstudio.com/download">
+              <font color="blue">https://code.visualstudio.com</font>
+            </a></h6>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mediaE200">
+      <div class="mediaE">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/Wr0AuA7PonA"
+          title="How to convert text to speech using Android|| Decky's World"
+          id="How to convert text to speech using Android|| Decky's World" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      </div" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">How to convert text to speech using Android|| Decky's World
+        </h5><br>
+        In this video i told you how to convert text to speech using Android
+        <h6>App link: <a href="https://play.google.com/store/apps/details?id=br.com.escolhatecnologia.vozdonarrador">
+            <font color="blue">https://play.google.com/store/apps/details?id=br.com.escolhatecnologia.vozdonarrador
+            </font>
+          </a></h6>
+      </div>
+
+
+      <div class="mediaTW200">
+        <div class="mediaTW">
+          <iframe width="720" height="470" src="https://www.youtube.com/embed/HlcLdksayt4"
+            title="How to change caller screen in any phone." id="How to change caller screen in any phone."
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        </div" class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">How to change caller screen in any phone.
+          </h5><br>
+          All people get bored with their same caller screen so in this video i told that how can you change your caller
+          screen.
+          <h6>App link: <a href="https://play.google.com/store/apps/details?id=com.bolo.callertheme">
+              <font color="blue">https://play.google.com/store/apps/details?id=com.bolo.callertheme
+              </font>
+            </a></h6>
+        </div>
+
+      </div>
+
+
+      <div class="mediaTW200">
+        <div class="mediaTW">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DexRQLZzvRc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        </div" class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">How to change caller screen in any phone.
+          </h5><br>
+          This video is about how can you make PDF from gallery images
+          <h6>App link: <a href="https://play.google.com/store/apps/details?id=com.jio.media.jiobeats">
+              <font color="blue">https://play.google.com/store/apps/details?id=com.jio.media.jiobeats
+              </font>
+            </a></h6>
+        </div>
+
+      </div>
+
+      <div class="mediaTh200">
+        <div class="mediaTh">
+          <iframe width="720" height="470" src="https://www.youtube.com/embed/j9xH2p9v8Jw"
+            title="How to use (₹) rupee sign in any windows #PC" id="How to use (₹) rupee sign in any windows #PC"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        </div" class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">How to use (₹) rupee sign in any windows #PC.
+          </h5><br>
+          If you want to use Euro sign in your windows<br>
+          1. Hold down <kbd class="kbds">Alt</kbd> and type <kbd class="kbds">8377</kbd> to get a Euro key to
+          appear.<br>
+          2. type <kbd class="kbds">20B9</kbd> and then hold down <kbd class="kbds">Alt</kbd> & then press <kbd
+            class="kbds">x</kbd>
+          </h6>
+        </div>
+
+        <div class="media14200">
+          <div class="media14">
+            <iframe width="720" height="470" src="https://www.youtube.com/embed/Gz80wYdzUdU"
+              title="How to use Euros € sign in Windows." id="How to use Euros € sign in Windows." frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+
+          </div" class="mr-3" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0">How to use Euros € sign in Windows.
+            </h5><br>
+            If you want to use Euro sign in your windows<br>
+            1. Hold down <kbd class="kbds">Alt</kbd> and type <kbd class="kbds">0128</kbd> to get a Euro key to
+            appear.<br>
+            2. type <kbd class="kbds">20ac</kbd> and then hold down <kbd class="kbds">Alt</kbd> & then press <kbd
+              class="kbds">x</kbd>
+
+            <h6>
+
+
+              <div class="mediaemoji200">
+                <div class="mediaemoji">
+                  <iframe width="720" height="470" src="https://www.youtube.com/embed/DFpVbhPXZj0"
+                    title="how to add Emoji 😎 in Html | Emoji in HTML webpage | icon in webpage."
+                    id="how to add Emoji 😎 in Html | Emoji in HTML webpage | icon in webpage." frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+
+                </div" class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0">how to add Emoji &#128526 in Html | Emoji in HTML webpage | icon in webpage.
+                  </h5><br>
+                  Emoji PDF download link :
+                  <h6><a href="https://drive.google.com/file/d/1mze0a3qLeERp2dQ6C0uF8zsPHoXAJRfd/view">
+                      <font color="blue">https://drive.google.com/file/d
+                    </a>
+                    </font>
+                  </h6>
+                </div>
+
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <script>
+      function myFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+
+        /* Alert the copied text */
+
+      }
+
+      function myFunction2() {
+        /* Get the text field */
+        var copyText = document.getElementById("myinput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+
+        /* Alert the copied text */
+
+      }
+    </script>
+
+
+
+
+</body>
+
+</html>
