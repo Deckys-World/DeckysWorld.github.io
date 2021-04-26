@@ -20,6 +20,10 @@
     }
     .burger{
     display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
     }
     .h-nav-resp{
         height: 72px;
